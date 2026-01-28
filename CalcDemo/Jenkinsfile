@@ -27,7 +27,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Running tests'
-                dir('CalcDmo') {
+                dir('CalcDemo') {
                     bat 'mvn test'
                 }
             }
@@ -36,7 +36,7 @@ pipeline {
         stage('Package') {
             steps {
                 echo 'Packaging application'
-                dir('CalcDmo') {
+                dir('CalcDemo') {
                     bat 'mvn package'
                 }
             }
