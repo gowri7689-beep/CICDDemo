@@ -18,7 +18,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building the project'
-                dir('CalcDmo') {
+                dir('CalcDemo') {
                     bat 'mvn clean compile'
                 }
             }
